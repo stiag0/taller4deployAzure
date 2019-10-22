@@ -15,7 +15,7 @@ productos_list = ["Leche", "Cacao", "Carne", "Flores","Hortaliza"]
 def addCultivo():
     return render_template('createCultivo.html', productos= productos_list)
 
-@app.route('/listaCultivos/', methods=['GET'])
+@app.route('/listaCultivos', methods=['GET'])
 def listaCultivo():
     find_response = find_cultivos()
     cultivos_list.clear()
